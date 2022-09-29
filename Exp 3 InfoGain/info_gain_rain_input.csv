@@ -1,0 +1,11 @@
+Temperature,Humidity,Clouds,Rain
+High,High,Yes,Yes
+High,High,No,No
+Low,High,No,No
+Medium,Low,No,No
+High,Low,Yes,Yes
+Medium,Low,Yes,Yes
+Low,Low,Yes,No
+Low,Low,No,No
+Low,High,Yes,Yes
+Medium,Low,No,No
