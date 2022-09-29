@@ -22,6 +22,7 @@ for line in lines[1:]:
     transactions.append(list(map(int,line.split(','))))     
 data ={'items':items,'transactions':transactions}
 
+print(data)
 
 items = data['items']
 transactions = data['transactions']
@@ -32,4 +33,4 @@ for s in sets:
     freq=get_freq(s,items,transactions)
     if freq>=min_freq:
         frequent_sets.append(s)
-print(frequent_sets)
+print("Ans is : {} ".format(frequent_sets))

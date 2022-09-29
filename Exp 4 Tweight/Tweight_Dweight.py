@@ -36,7 +36,6 @@ with open('Tweight_Dweight_Output.csv', 'w', encoding='UTF8') as f:
     writer.writerow(header)
 
     # write the data
-    #writer.writerow(data)
 
     for i in range(len(A)):
         data = [Location[i],A[i],B[i],Total[i],A_T_wt[i],B_T_wt[i],A_D_wt[i],B_D_wt[i]]

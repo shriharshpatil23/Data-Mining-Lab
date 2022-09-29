@@ -31,6 +31,7 @@ stdDevB = st.stdev(B)
 
 
 ans = total_corelation/(stdDevA*stdDevB*(n-1))
+print(ans)
 
 header = ['A', 'B', 'A-a"' , 'B-b"','(A-a")*(B-b")']
 
