@@ -1,29 +1,29 @@
 from cmath import sqrt
 import pandas
-import math
 import csv  
-
+from scipy import stats
  
 # reading the CSV file
-csvFile = pandas.read_csv('Normalization_Input.csv')
+csvFile = pandas.read_csv('Noramalization_Input.csv')
  
 #Storing all elements in Array
-arr = []
-
-for row in csvFile:
-    arr.append(int(row))            #Type casting to integer as CSV gives files in String format
-
+arr = csvFile['Array'].tolist()
 n = len(arr)                #length of Array
 sum_array = sum(arr)        #Sum of all elements in Array
 mean_array = sum_array/n    #Mean of Array
 max_array = max(arr)        #Max of all elements in Array
 min_array = min(arr)        #Min of all elements in Array
-
+new_min = 0
+new_max = 1
 MinMaxNorm = []
 
-for i in arr:
-    tmp = (i-min_array)/(max_array-min_array)           #Min Max Normalization Formula
-    MinMaxNorm.append(tmp)
+if min_array == max_array:
+    for i in range(n):
+        MinMaxNorm.append(new_max-new_min)
+else:
+    for i in arr:
+        tmp = ((i-min_array)*(new_max-new_min))/(max_array-min_array)           #Min Max Normalization Formula
+        MinMaxNorm.append(tmp)
 
 sum_of_square = 0
 
@@ -33,13 +33,18 @@ for i in arr:
 standardDeviation = sqrt(sum_of_square/n)           #calculating Standard Deviation
 
 ZscoreNorm = []
-
-for i in arr:
-    tmp = (i-mean_array)/standardDeviation
-    ZscoreNorm.append(tmp)
+if standardDeviation==0:
+    for i in range(n):
+        ZscoreNorm.append(0)
+else:
+    for i in arr:
+        tmp = (i-mean_array)/standardDeviation
+        ZscoreNorm.append(tmp)
 
 print(ZscoreNorm)
 
+# newZscore = arr
+# print(stats.zscore(newZscore))
 
 header = ['Input', 'Min-Max Normalized Array', 'Zscore Normalized Array']
 
