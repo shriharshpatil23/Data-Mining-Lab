@@ -1,0 +1,15 @@
+Day,outlook,Temp,Wind,PalyTennis
+1,Sunny,Hot,Weak,No
+2,Sunny,Hot,Strong,No
+3,Overcast,Hot,Weak,Yes
+4,Rain,Mild,Weak,Yes
+5,Rain,Cool,Weak,Yes
+6,Rain,Cool,Strong,No
+7,Overcast,Cool,Strong,Yes
+8,Sunny,Mild,Weak,No
+9,Sunny,Cool,Weak,Yes
+10,Rain,Mild,Weak,Yes
+11,Sunny,Mild,Strong,Yes
+12,Overcast,Mild,Strong,Yes
+13,Overcast,Hot,Weak,Yes
+14,Rain,Mild,Strong,No
