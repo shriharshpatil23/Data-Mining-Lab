@@ -1,0 +1,16 @@
+﻿Name,Body Temperature,Gives Birth,Aerial Creature,Aquatic Creature,Class Label
+human,warm-blooded,yes,no,no,mammal
+python,cold-blooded,no,no,no,Nonmammal
+salmon,cold-blooded,no,no,yes,Nonmammal
+whale,warm-blooded,yes,no,yes,mammal
+frog,cold-blooded,no,no,semi,Nonmammal
+komodo dragon,cold-blooded,no,no,no,Nonmammal
+bat,warm-blooded,yes,yes,no,mammal
+pigeon,warm-blooded,no,yes,no,Nonmammal
+cat,warm-blooded,yes,no,no,mammal
+leopard shark,cold-blooded,yes,no,yes,Nonmammal
+turtle,cold-blooded,no,no,semi,Nonmammal
+penguin,warm-blooded,no,no,semi,Nonmammal
+porcupine,warm-blooded,yes,no,no,mammal
+eel,cold-blooded,no,no,yes,Nonmammal
+salamander,cold-blooded,no,no,semi,Nonmammal
